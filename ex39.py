@@ -104,3 +104,4 @@ print('*' * 10)
 print('sortowanie po nazwie\n', new)
 new3 = sorted(states.items(), key=lambda t: t[0], reverse=True)  #sorted by key - reverse
 print('sortowanie po nazwie - reverse \n', new3)
+#test
