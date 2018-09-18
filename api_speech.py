@@ -3,11 +3,14 @@ from pprint import pprint
 
 from google.cloud import speech
 
+#audio_path = OSR_us_000_0031_8k.wav
+#transcript_file_name = transcription.txt
 
 def run(audio_path, transcript_file_name):
 
     response = get_transcript(audio_path)
     write_to_file(transcript_file_name, response)
+
 
 
 def write_to_file(transcript_file_name, response):
