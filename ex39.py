@@ -8,6 +8,7 @@ states = {
     'Michigan': 'MI'
 }
 
+
 #create a bacis set of states and some cities in them
 cities = {
     'CA' : 'San Francisco',
@@ -96,7 +97,7 @@ new1 = sorted(states.items(), key=lambda t: t[1])  #sorted by value
 print(new1)
 print('*' * 10)
 new2 = sorted(states.items(), key=lambda t: len(t[0]))  #sorted by length of key string
-new4 = sorted(states.items(), key=lambda t: len(t[0]), reverse=True)  #sorted by length of key string - reverse
+new4 = sorted(states.items(), key=lambda t: len(t[0]), revese=True)  #sorted by length of key string - reverse
 print(f'sortowanie po dlugosci \n {new2}')
 print(f'sortowanie po dlugosci - reverse \n {new4}')
 print('*' * 10)
@@ -105,3 +106,5 @@ print('sortowanie po nazwie\n', new)
 new3 = sorted(states.items(), key=lambda t: t[0], reverse=True)  #sorted by key - reverse
 print('sortowanie po nazwie - reverse \n', new3)
 #test
+
+print(list(map(lambda x: x.upper(), states.keys())))
